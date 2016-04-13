@@ -1,0 +1,567 @@
+@font-face {
+    font-family: 'pfdindisplaypro-reg';
+    src: url('../fonts/pfdindisplaypro-reg-webfont.eot');
+    src: url('../fonts/pfdindisplaypro-reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pfdindisplaypro-reg.ttf'),
+         url('../fonts/pfdindisplaypro-reg-webfont.woff2') format('woff2'),
+         url('../fonts/pfdindisplaypro-reg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pf_dindisplay_problack';
+    src: url('../fonts/pfdindisplaypro-black-webfont.eot');
+    src: url('../fonts/pfdindisplaypro-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pfdindisplaypro-black.ttf') format('truetype'),
+         url('../fonts/pfdindisplaypro-black-webfont.woff2') format('woff2'),
+         url('../fonts/pfdindisplaypro-black-webfont.woff') format('woff');   
+}
+
+@font-face {
+    font-family: 'pf_dindisplay_prolight';
+    src: url('../fonts/pfdindisplaypro-light-webfont.eot');
+    src: url('../fonts/pfdindisplaypro-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pfdindisplaypro-light.ttf'),
+         url('../fonts/pfdindisplaypro-light-webfont.woff2') format('woff2'),
+         url('../fonts/pfdindisplaypro-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+    
+*{
+    margin: 0;
+    padding:0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
+html, body{
+     height: 100%;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+#wrapper { 
+     
+}
+
+.center {
+    width:1200px;
+    margin:0 auto;
+}
+
+.menu {
+    background: #59595b;
+    height: 30px;
+}
+
+.navigation {
+    width: 850px;
+    height: 30px;
+}
+
+.navigation li {
+    line-height: 9px;
+    float:left;
+    margin: 10px 40px 0 0;
+}
+
+.navigation li a {
+    font-family: 'pfdindisplaypro-reg';
+    font-size:16px;
+    display: inline-block;
+    color:#fff;
+}
+
+.navigation li a:hover,
+.login a:hover {
+    color:#bfbfc1;
+}
+
+.login{
+    padding: 5px;
+    float:right;
+    margin-top: -29px;   
+}
+
+.login a{
+    font-family: 'pfdindisplaypro-reg';
+    display: inline-block;
+    color:#fff;
+    margin-right: 5px;
+}
+
+.login span{
+     font-family: 'pfdindisplaypro-reg';
+     color: #b3b3b5;
+     margin-right: 5px;
+}
+
+.login a:last-child{
+     margin-right:0;
+}
+.login a:hover {
+    color:#fff;
+}
+
+header{
+       
+}
+
+.logo{
+    float:left;
+    margin: 14px 20px 0 0px;
+}
+
+.contacts{
+    float:left;
+}
+
+.contacts a {
+    font-family: 'pfdindisplaypro-reg'; 
+    font-size: 15px;
+    line-height: 20px;
+}
+
+ header .info{
+    padding: 30px 14px;
+    float: left;
+}
+
+header .contact-info{
+    margin-left: 13px;
+    padding: 30px 15px;
+}
+
+.contact-phone img, .contact-info img{
+    float:left;
+    position: relative;
+    bottom:5px;
+}
+
+.contact-phone p,.contact-info p {
+    padding:0 0 4px 58px;
+}
+
+.contact-phone a, .contact-info a{
+    color:#59595b;
+}
+
+ a.general-color {
+     font-family: 'pfdindisplaypro-reg';
+     color:#202020;
+     font-size: 20px;
+     font-weight: bold;
+}
+
+a.feedback {
+    color: #5e9fc8;
+    border-bottom: 1px solid #5e9fc8;
+}
+
+form{
+    float:left;
+    position:relative;
+}
+
+input[type="text"]{
+    font-family: 'pfdindisplaypro-reg';
+    height: 50px;
+    width: 240px;
+    padding: 15px 0 15px 50px;
+    margin: 30px 0 0 31px;
+    background-color: #f3f3f3;
+    border:0;
+    font-size: 17px;
+}
+
+.fa-search {
+    position:absolute;
+    left: 50px;
+    bottom: 16px;
+    color:#cbcbcb;
+    cursor: pointer;
+}
+
+.basket{
+    width:200px;
+    float:right;
+    margin-top:11px;
+}
+
+.basket a{ 
+    font-family: 'pfdindisplaypro-reg'; 
+}
+
+.basket img{
+    position:relative;
+    float:left;
+    margin:20px 0 0 30px;
+}
+
+.your-basket{
+    margin: 25px 0 0 20px;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.basket p:last-child{
+    text-align: center;
+}
+
+.number-cart{
+    display:none;
+    position:absolute;
+    height: 22px;
+    width: 22px;
+    top: 60px;
+    right: 195px;
+    border-radius: 50%;
+    background-color: #98b757;
+}
+
+.text-basket{
+    display:none;
+    position:absolute;
+    top:63px;
+    right: 200px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+nav.main-menu {
+     width: 1200px;
+     position: relative;
+     margin-top: 7px;
+     background-color: #8aaa4c;
+}
+.indent{
+   margin-left:20px;
+}
+
+nav .navbar li{
+   float:left; 
+}
+
+nav .navbar li a{
+    font-family: 'pfdindisplaypro-reg';
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    padding: 20px;
+}
+
+nav .navbar li a:hover,.navbar li a:active {
+   color:#e9aa14; 
+}
+
+h1.mainbox-title {
+    font-family: 'pfdindisplaypro-reg';
+    font-size:22px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#slider {
+    height: 260px;
+    width:1200px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+#slider .slide {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 260px;
+    background-color: #f3f3f3;
+}
+
+.slide h1{
+   font-family: 'pf_dindisplay_prolight';
+    font-size: 48px;
+    font-weight: lighter;
+    padding:48px 0 0 50px;
+}
+
+.slide h3{
+    font-family: 'pf_dindisplay_prolight';
+    font-size:24px;
+    font-weight: 100;
+    color:#59595b;
+    padding:15px 0 0 50px;
+}
+
+.slide button {
+    cursor: pointer; 
+    text-decoration: none;
+    padding:15px 25px; 
+    color:#ffffff; 
+    background-color:#e0a71f;
+    border-radius:4px; 
+    border:none;
+    margin: 25px 0 0 50px;
+}
+
+.slide button a{
+    font-family: 'pf_dindisplay_problack';
+    letter-spacing: 2px;
+    text-decoration: none; 
+    color:#ffffff; 
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.slide img{
+    position: absolute;
+    right: 130px;
+    top:55px;
+}
+ .line{
+    margin-top:40px;
+     border-bottom: 1px solid #f3f3f3;
+}
+
+.mainbox-title{
+    font-style: normal;
+    font-size: 22px;
+    margin-top:30px;
+    text-align: center;
+}
+
+.carousel-clients{
+    background:0;
+    height:130px;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.carousel-clients .carousel-wrapper{
+    width:1100px;
+}
+
+.carousel-clients .port, .carousel-clients .dexter {
+    background:0;
+    height:130px;
+}
+.carousel-clients .carousel-block {
+    margin: 0;
+    padding:0;
+    width:190px;
+    height:130px;
+    border:0;
+}
+
+.carousel-clients .carousel-block img{
+    margin: -5px 0px 0 30px;
+}
+
+.carousel-clients .fa-angle-left,.carousel-clients .fa-angle-right{
+    position:absolute;
+    color:#d5d6d8;
+}
+
+.carousel-clients .carousel-button-left a,
+.carousel-clients .carousel-button-right a {
+    width: 25px; 
+    position: relative;
+    top: 30px;
+    bottom: 0px;
+    height:36px;
+    cursor: pointer; 
+    text-decoration:none;
+}
+
+
+section {
+    width:1200px;
+}
+
+section .reviews{ 
+    background-color: #f3f3f3;
+    font-size:17px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ie-box-sizing: border-box;
+}
+
+.reviews {
+    width: 590px;
+    float:left;
+    padding:10px;
+    position: relative;
+    margin: 20px 10px 0 0;
+}
+
+.reviews img{
+      float:left;
+      width:90px;
+      border-radius: 10px;
+      display: inline-block;
+}
+
+.reviews p {
+    font-family: 'pfdindisplaypro-reg';
+    margin: 60px 0 0 100px;
+}
+
+.info-clients {
+    font-size: 17px;
+    font-family: 'pfdindisplaypro-reg';
+    float:right;
+    display: inline-block;
+    vertical-align:middle;
+    position: absolute;
+    top:40px;
+    left:140px;
+}
+
+.comments p {
+    margin-top:15px;
+}
+
+span.right{
+    float:right;
+}
+
+.color-comment-yes {
+    color:#5c932a;
+}
+
+.color-comment-not {
+    color:#f20909;
+}
+
+.response-review {
+    font-family: 'pfdindisplaypro-reg';
+     margin-top:20px;   
+}
+
+.data-time {
+    margin-left:195px;
+    color: #a09f9f;
+}
+
+.fa-calendar {
+   margin-left:10px; 
+}
+
+h1.mainbox-title:nth-child(5n){
+    margin-bottom:20px;
+}
+
+article {
+    font-family: 'pfdindisplaypro-reg';
+    background-color: #f3f3f3;
+    padding:20px 15px;
+}
+article p {
+   text-align: justify;
+    margin:10px 10px 15px 1px;
+    font-size: 17px;
+}
+
+.fa-pencil {
+     margin-left:30px;
+}
+
+article a:hover {
+    color:#8aaa4c;
+}
+
+footer {
+    width:100%;
+    font-family: 'pfdindisplaypro-reg';
+    margin:30px 0 0 0;
+    padding-bottom:65px;
+    background:#ededed;
+}
+
+footer .logo {
+    float:left;
+}
+
+.b-block {
+    float:left;
+    margin: 40px 0 0 60px;
+       
+}
+
+.b-block:nth-child(4) {
+    margin: 72px 0 0 25px;
+}
+
+.b-block span {
+    font-size: 18px;
+    display: inline-block;
+    margin:0 0 10px 3px;
+}
+
+.b-block li {
+    padding:3px;  
+}
+
+.b-block li a {
+    font-size:15px;
+    color:#59595b;
+}
+
+.b-block li a:hover{
+    color:#8aaa4c; 
+}
+
+footer .contacts {
+    float:right; 
+    margin-top:40px;
+}
+
+footer .info{
+    display: inline-block;
+    margin-left:10px;
+}
+
+footer .contact-info { 
+    margin-left:30px;
+}
+
+.copyright {
+    width:100%;
+    padding:20px;  
+    position:relative;
+    font-family: 'pfdindisplaypro-reg';
+}  
+
+.copyright span{
+    color: #dadada;
+    margin-left: 5px;  
+}
+
+.copyright img{
+     margin-left:33px;
+     float:right;
+}
+.ev-logo{
+    display: inline-block;
+    background: url(../img/lamp.png) no-repeat;
+    margin-left:10px;
+    color: #dadada;
+    margin-left: 130px; 
+    padding-top: 10px;
+    padding-left: 35px
+}

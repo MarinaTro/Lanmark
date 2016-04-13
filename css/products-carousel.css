@@ -1,0 +1,119 @@
+.carousel  {
+   max-width: 1200px; /* ширина всего блока */
+   margin: 20px auto;
+   width:100%;
+}
+.carousel-wrapper {
+   margin: 10px 25px; /* отступы для стрелок */
+   overflow: hidden; /* скрываем содержимое, выходящее за рамки основной области */
+   position:relative;
+}
+.carousel-items {
+   width: 10000px; /* устанавливаем большую ширину для набора элементов */
+   position: relative; /* позиционируем блок относительно основной области карусели */
+}
+.carousel-block {
+    position:relative;
+    float: left; /* выстраиваем все элементы карусели в ряд */
+    height: 397px;
+    width: 288px; /* задаём ширину каждого элемента */
+    padding: 10px 10px 10px 0px; /* делаем оступы, чтобы элементы не сливались */
+    border-top:1px solid #ededed;
+    border-bottom:1px solid #ededed;
+    border-left:1px solid #ededed;
+}
+.carousel-block img{
+	display:block;
+    margin: 40px 0 0 65px;
+}
+.port, .dexter {
+    height: 397px;
+    background-color:#f3f3f3;
+}
+
+.descript{
+    font-family: 'pfdindisplaypro-reg';
+    margin-left:25px;
+}
+.descript p{
+    margin-top:45px; 
+    margin-bottom:20px;
+    color:#5e9fc8;
+    font-size: 17px;
+}
+.descript p a:hover {
+    color:#8aaa4c;
+}
+
+.descript span {
+    font-size:15px;
+    color:#595a5b; 
+    text-align:left;
+}
+.port {
+    float:left; 
+    margin-left: px;
+}
+
+.dexter {
+    float:right;
+    margin-right: px;
+}
+
+.fa-angle-left, .fa-angle-right {
+    position:absolute;
+    left:7px;
+    color:#d5d6d8;
+}
+
+ span a.general-color {
+    margin:10px 13px 10px 25px;
+}
+
+.information {
+    position:absolute;
+    bottom:15px;
+    
+}
+
+.quantity{
+    display: inline-block;
+    padding:10px 15px;
+    border-radius:3px;
+    background-color: #f3f3f3;
+    color:#8f8f91; 
+}
+
+.buy {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius:3px;
+    background-color:#e0a71f;
+    color:#fff;
+    margin-left:3px;
+}
+.buy a{ 
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'pf_dindisplay_problack';
+}
+
+/*********** BUTTONS ***********/
+.carousel-button-left a, .carousel-button-right a{
+    width: 25px; 
+    position: relative;
+    top: 185px;
+    bottom: 0px;
+    height:36px;
+    cursor: pointer; 
+    text-decoration:none;
+}
+.carousel-button-left a{
+   float: left; 
+}
+.carousel-button-right a{
+   float: right; 
+}
+
+
